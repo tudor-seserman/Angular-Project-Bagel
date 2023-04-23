@@ -1,0 +1,45 @@
+<div id="instructions" [hidden]="gameOn">
+    <pre>
+I am thinking of a 3-digit number. Try to guess what it is.
+Here are some clues:
+    </pre>
+    <div id="direction_table">
+        <table>
+        <tr>
+            <th>When I say:</th>
+            <th>That means:</th>
+        </tr>
+        <tr>
+            <th>Pico</th>
+            <th>One digit is correct but in the wrong position.</th>
+        </tr>
+        <tr>
+            <th>Fermi</th>
+            <th>One digit is correct and in the right position.</th>
+        </tr>
+        <tr>
+            <th>Bagels</th>
+            <th>No digit is correct.</th>
+        </tr>
+        </table>
+    </div>
+    <pre>
+    I have thought up a number.
+    You have 10 guesses to get it.
+        
+    </pre>
+</div>
+ 
+<div id="gamePlay" [hidden]="!gameOn">
+    <input #numGuess type="textbox" required>
+    <h3 class="play" 
+        (click)="guessProcessed(numGuess.value);
+                numGuess.value=''; 
+                guessTracker()
+                " 
+        [hidden]="!gameOn"
+        >Submit Guess
+    </h3>
+</div>
+
+<h3 class="play" (click)="gameOn=true" [hidden]="gameOn">Would You Like To Play?</h3>

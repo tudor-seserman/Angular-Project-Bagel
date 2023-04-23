@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+html{
+    background-color: rgb(244, 202, 148);
+    color:rgb(101, 49, 4);
+    align-content: center;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: auto;
+}

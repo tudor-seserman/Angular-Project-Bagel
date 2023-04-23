@@ -1,0 +1,17 @@
+#instructions{
+    margin-top: -15px;
+    font-size: larger;
+}
+
+table, th, td {
+    margin:auto;
+    border: 1px solid rgb(221, 119, 10);
+    border-collapse: collapse;
+    border-radius: 4px;
+    }
+
+.play{
+    border: 3px dashed rgb(221, 119, 10);
+    border-radius: 4px;
+    margin: auto 20vw;
+}
